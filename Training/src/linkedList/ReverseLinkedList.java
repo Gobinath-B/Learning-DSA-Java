@@ -2,7 +2,14 @@ package linkedList;
 
 public class ReverseLinkedList {
 
+    static class ListNode {
+        int val;
+        ListNode next;
 
+        ListNode(int val) {
+            this.val = val;
+        }
+    }
     public static void main(String[] args) {
         // Creating a sample linked list: 1 -> 2 -> 3 -> 4 -> 5
         ListNode head = new ListNode(1);
