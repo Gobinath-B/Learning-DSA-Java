@@ -1,12 +1,22 @@
 package ArrayChallenge;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
-public class IntervalInsert {
+public class Interval {
 
     public static void main(String[] args) {
+        // Example input
+        int[][] intervals = {{1, 3}, {6, 9}};
+        int[] newInterval = {2, 5};
 
+        // Create an instance of IntervalInsert
+        Interval intervalInsert = new Interval();
+
+        // Call the insert method and print the result
+        int[][] result = intervalInsert.insert(intervals, newInterval);
+        System.out.println("Result: " + Arrays.deepToString(result));
     }
     public int[][] insert(int[][] intervals, int[] newInterval) {
         int i = 0;
