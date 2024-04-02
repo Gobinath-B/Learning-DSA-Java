@@ -1,5 +1,7 @@
 package ArrayChallenge;
 
+import java.util.Scanner;
+
 public class QuickSort {
     /* This function takes last element as pivot,
  places the pivot element at its correct
@@ -66,7 +68,14 @@ public class QuickSort {
     // Driver program
     public static void main(String args[])
     {
-        int arr[] = {10, 7, 8, 9, 1, 5};
+        Scanner in  = new Scanner(System.in);
+        System.out.println("Enter the array size");
+        int size = in.nextInt();
+        System.out.println("Enter the array elements");
+        int[] arr = new int[size];
+        for(int i=0;i<size;i++){
+            arr[i] = in.nextInt();
+        }
         int n = arr.length;
 
         QuickSort ob = new QuickSort();
