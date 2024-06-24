@@ -6,12 +6,9 @@ public class QuickSort {
             arr[i] = arr[j];
             arr[j] = temp;
         }
-
         public static void quickSort(int[] arr, int lo, int hi) {
             //write your code here
-
             if(lo > hi) return;
-
             int pivot = arr[hi];
             int partitionIndex = partition(arr,pivot,lo,hi);
 
